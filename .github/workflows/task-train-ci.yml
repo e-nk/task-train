@@ -19,9 +19,9 @@ jobs:
       - uses: ruby/setup-ruby@v1
        # with:
         #   ruby-version: '2.7.4' do this if you dont have ruby verion on your repo
-      - run: bundle install
-      - run: bundle exec rails db:migrate RAILS_ENV=test
-      - run: bundle exec rspec spec
+      - run: cd api && bundle install
+      - run: cd api && bundle exec rails db:migrate RAILS_ENV=test
+      - run: cd api && bundle exec rspec spec
           
           
       
