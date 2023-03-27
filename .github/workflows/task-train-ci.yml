@@ -17,7 +17,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: ruby/setup-ruby@v1
-       # with:
+        with:
+          ruby-version: '3.0.2'
         #   ruby-version: '2.7.4' do this if you dont have ruby verion on your repo
       - run: cd api && bundle install
       - run: cd api && bundle exec rails db:migrate RAILS_ENV=test
