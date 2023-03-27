@@ -588,3 +588,102 @@ Filter chain halted as :session_expired? rendered or redirected
 Completed 401 Unauthorized in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 341)
 
 
+Started POST "/users/login" for 127.0.0.1 at 2023-03-27 11:23:16 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/home/enock/Development/code/phase-4/task-train/api/app/controllers/application_controller.rb:92: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/application_controller.rb:92: syntax error, unexpected `end', expecting end-of-input
+app/controllers/application_controller.rb:92: syntax error, unexpected `end', expecting end-of-input
+app/controllers/users_controller.rb:1:in `<main>'
+Started POST "/users/login" for 127.0.0.1 at 2023-03-27 11:25:07 +0300
+  
+SyntaxError (/home/enock/Development/code/phase-4/task-train/api/app/controllers/application_controller.rb:93: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/application_controller.rb:93: syntax error, unexpected `end', expecting end-of-input
+app/controllers/application_controller.rb:93: syntax error, unexpected `end', expecting end-of-input
+app/controllers/users_controller.rb:1:in `<main>'
+Started POST "/users/login" for 127.0.0.1 at 2023-03-27 11:25:48 +0300
+  
+SyntaxError (/home/enock/Development/code/phase-4/task-train/api/app/controllers/application_controller.rb:92: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/application_controller.rb:92: syntax error, unexpected `end', expecting end-of-input
+app/controllers/application_controller.rb:92: syntax error, unexpected `end', expecting end-of-input
+app/controllers/users_controller.rb:1:in `<main>'
+Started POST "/users/login" for 127.0.0.1 at 2023-03-27 11:26:01 +0300
+  
+SyntaxError (/home/enock/Development/code/phase-4/task-train/api/app/controllers/application_controller.rb:92: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/application_controller.rb:92: syntax error, unexpected `end', expecting end-of-input
+app/controllers/application_controller.rb:92: syntax error, unexpected `end', expecting end-of-input
+app/controllers/users_controller.rb:1:in `<main>'
+Started POST "/users/login" for 127.0.0.1 at 2023-03-27 11:26:41 +0300
+  
+SyntaxError (/home/enock/Development/code/phase-4/task-train/api/app/controllers/application_controller.rb:80: syntax error, unexpected `end', expecting end-of-input
+    end
+    ^~~
+):
+  
+app/controllers/application_controller.rb:80: syntax error, unexpected `end', expecting end-of-input
+app/controllers/application_controller.rb:80: syntax error, unexpected `end', expecting end-of-input
+app/controllers/users_controller.rb:1:in `<main>'
+Started POST "/users/login" for 127.0.0.1 at 2023-03-27 11:26:42 +0300
+  
+SyntaxError (/home/enock/Development/code/phase-4/task-train/api/app/controllers/application_controller.rb:80: syntax error, unexpected `end', expecting end-of-input
+    end
+    ^~~
+):
+  
+app/controllers/application_controller.rb:80: syntax error, unexpected `end', expecting end-of-input
+app/controllers/application_controller.rb:80: syntax error, unexpected `end', expecting end-of-input
+app/controllers/users_controller.rb:1:in `<main>'
+Started POST "/users/login" for 127.0.0.1 at 2023-03-27 11:35:24 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/home/enock/Development/code/phase-4/task-train/api/app/controllers/application_controller.rb:92: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/application_controller.rb:92: syntax error, unexpected `end', expecting end-of-input
+app/controllers/application_controller.rb:92: syntax error, unexpected `end', expecting end-of-input
+app/controllers/users_controller.rb:1:in `<main>'
+Started POST "/users/login" for 127.0.0.1 at 2023-03-27 11:35:50 +0300
+  
+SyntaxError (/home/enock/Development/code/phase-4/task-train/api/app/controllers/application_controller.rb:92: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/application_controller.rb:92: syntax error, unexpected `end', expecting end-of-input
+app/controllers/application_controller.rb:92: syntax error, unexpected `end', expecting end-of-input
+app/controllers/users_controller.rb:1:in `<main>'
+Started POST "/users/login" for 127.0.0.1 at 2023-03-27 11:37:14 +0300
+Processing by UsersController#login as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (username = NULL OR email = NULL) ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:28:in `login'
+Completed 401 Unauthorized in 71ms (Views: 0.5ms | ActiveRecord: 1.8ms | Allocations: 25682)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2023-03-27 11:41:28 +0300
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:21:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started POST "/users/login" for 127.0.0.1 at 2023-03-27 12:09:37 +0300
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"enock", "password"=>"[FILTERED]", "user"=>{"username"=>"enock"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007f7e9c0efe30>, params: {"username"=>"enock", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"username"=>"enock"}} }[0m
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007f7e9c0efe30>, params: {"username"=>"enock", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"username"=>"enock"}} }[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (username = 'enock' OR email = NULL) ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `login'
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007f7e9c0efe30>, params: {"username"=>"enock", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"username"=>"enock"}} }[0m
+Completed 200 OK in 295ms (Views: 0.8ms | ActiveRecord: 1.8ms | Allocations: 17999)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2023-03-27 12:10:11 +0300
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"enock", "password"=>"[FILTERED]", "user"=>{"username"=>"enock"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007f7eb0116df0>, params: {"username"=>"enock", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"username"=>"enock"}} }[0m
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007f7eb0116df0>, params: {"username"=>"enock", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"username"=>"enock"}} }[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (username = 'enock' OR email = NULL) ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `login'
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007f7eb0116df0>, params: {"username"=>"enock", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"username"=>"enock"}} }[0m
+Completed 200 OK in 302ms (Views: 0.5ms | ActiveRecord: 0.4ms | Allocations: 1533)
+
+

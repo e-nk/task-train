@@ -17,6 +17,10 @@ Rails.application.routes.draw do
   get '/todos', to: 'todos#index'
 
 
+  #verify auth
+  get '/verify', to: 'application#verify_auth'
+
+
 
   get '/user/login/check', to: 'users#check_login_status'
 
